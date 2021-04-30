@@ -26,7 +26,7 @@ if ( $query->have_posts() ) { ?>
  <?php the_title(); ?>
  </a>
 
-<p><?php echo get_the_excerpt(); ?> <a href="<?php the_permalink();?>">Read More...</a></p>
+<p><?php echo get_the_excerpt(); ?> <a href="<?php the_permalink();?>">Read More ...</a></p>
 
  </article>
 
