@@ -19,24 +19,15 @@ if ( $query->have_posts() ) { ?>
 
  <section class="recent-posts clear">
 
- <?php while ( $query->have_posts() ) : $query->the_post() ; ?>
+ <?php while ( $query->have_posts() ) : $query->the_post() ;
 
- <article id="post-<?php the_ID(); ?>" <?php post_class( 'left' ); ?>>
- <a class="post-title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
- <?php the_title(); ?>
- </a>
+ get_template_part('template-parts/listing-single');
 
-<p class="content"><?php echo get_the_excerpt(); ?> </p>
-<a class="btn-read" href="<?php the_permalink();?>">Read More</a>
- </article>
+  endwhile; ?>
+</section>
 
- <?php endwhile; ?>
-
- </section>
 
 <?php }
-/* Restore original Post Data */
-wp_reset_postdata();
 ?>
 
 </main>
