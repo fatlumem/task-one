@@ -624,4 +624,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'fatlume',	'$P$BsWX8XfGTCmtCHmT4SjbQbdNQ7uLm9/',	'fatlume',	'fatlumemislimi@gmail.com',	'http://localhost/task-one',	'2021-04-29 00:13:49',	'',	0,	'fatlume');
 
--- 2021-05-03 23:00:29
+-- 2021-05-03 23:04:26
