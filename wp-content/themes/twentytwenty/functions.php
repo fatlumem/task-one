@@ -759,8 +759,7 @@ function twentytwenty_get_elements_array() {
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
 
-function custom_excerpt_length(){
-	return 25;
+function new_ex_length( $length ){
+	return 10;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length' );
-
+add_filter( 'excerpt_length', 'new_ex_length', 999 );

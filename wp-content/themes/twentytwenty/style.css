@@ -306,12 +306,13 @@ main {
 
 .post{
 	  background: #fff;
-		  box-shadow: 0 0 20px #eee;
+		box-shadow: 0 0 20px #eee;
 	  flex: 0 0 30.33%;
     padding: 15px;
     align-items: stretch;
 		margin: 1%;
 		min-height: 440px !important;
+		position: relative;
 }
 .content{
 margin-top: 20px;
@@ -335,11 +336,24 @@ margin-top: 20px;
   color: white;
   display: block;
 	text-decoration: none;
+	position: absolute;
+	bottom: 20px;
 }
 .btn-read:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+@media (min-width:451px) and (max-width: 767px){
+  .post{
+		flex: 0 0 47.9%;
+	}
+}
+@media (max-width:450px){
+  .post{
+		flex: 0 0 99.9%;
+	}
 }
 
 h1,
